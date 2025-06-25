@@ -48,52 +48,46 @@
     /* Section 2 */
     .section2 {
       display: flex;
-      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .section2-item {
+      display: flex;
       gap: 20px;
       align-items: center;
     }
 
-    .section2-left,
-    .section2-right {
-      width: 100%;
+    .section2-item .image {
+      width: 50%;
     }
 
-    @media(min-width: 768px) {
-      .section2-left,
-      .section2-right {
-        width: 50%;
-      }
-    }
-
-    .section2-left {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .card {
-      background-color: transparent;
-      border: none;
-      padding: 10px;
-    }
-
-    .card img {
+    .section2-item .image img {
       width: 100%;
       height: auto;
       border-radius: 10px;
     }
 
-    .section2-right {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      gap: 20px;
+    .section2-item .text {
+      width: 50%;
     }
 
-    .section2-right p {
-      padding: 10px;
+    .section2-item .text p {
+      padding: 15px;
       background: #fff;
       border-left: 4px solid #333;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .section2-item {
+        flex-direction: column;
+      }
+
+      .section2-item .image,
+      .section2-item .text {
+        width: 100%;
+      }
     }
 
     /* Section 3 */
@@ -193,15 +187,17 @@
 
   <!-- Section 2 -->
   <section class="section2">
-    <div class="section2-left">
-      <div class="card"><img src="image1.png" alt="Wood Craft 1" /></div>
-      <div class="card"><img src="image2.png" alt="Wood Craft 2" /></div>
-      <div class="card"><img src="image3.png" alt="Wood Craft 3" /></div>
+    <div class="section2-item">
+      <div class="image"><img src="image1.png" alt="Wood Craft 1" /></div>
+      <div class="text"><p>High Quality Wood and Craftsmanship</p></div>
     </div>
-    <div class="section2-right">
-      <p>High Quality Wood and Craftsmanship</p>
-      <p>Expertly crafted wood design showcasing timeless elegance.</p>
-      <p>Premium materials ensure durability and aesthetic value.</p>
+    <div class="section2-item">
+      <div class="image"><img src="image2.png" alt="Wood Craft 2" /></div>
+      <div class="text"><p>Expertly crafted wood design showcasing timeless elegance.</p></div>
+    </div>
+    <div class="section2-item">
+      <div class="image"><img src="image3.png" alt="Wood Craft 3" /></div>
+      <div class="text"><p>Premium materials ensure durability and aesthetic value.</p></div>
     </div>
   </section>
 
@@ -237,8 +233,8 @@
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Your Brand |
-    <a href="https://instagram.com/yourbrand" target="_blank">Instagram</a> |
+    &copy; 2025 TimelessTimber |
+    <a href="https://www.instagram.com/timelesstimber__?igsh=MXhrdXNuMmR6ODNobA=" target="_blank">Instagram</a> |
     <a href="https://wa.me/yourwhatsapp" target="_blank">WhatsApp</a>
   </footer>
 
