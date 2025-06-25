@@ -1,150 +1,68 @@
-s<!DOCTYPE html>
-<html lang="id">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Timeless Timber</title>
-  <style>
-    header{
-      background-image:'assets/pexels-aeppli-1125265.jpg'
-         background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #e5e5e5;
-      color: #fff;
-    }
-    header, section, footer {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    .green-section {
-      background-color: #2e5f34;
-    }
-    .dark-section {
-      background-color: #111;
-    }
-    h1, h2 {
-      margin: 0 0 20px;
-    }
-    .hero img {
-      width: 200px;
-      margin: 20px auto;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      background-color: #3a7542;
-    }
-    .feature {
-      background-color: #2e5f34;
-      padding: 20px;
-      border-radius: 10px;
-      color: #fff;
-      text-align: left;
-    }
-    .feature img {
-      width: 100%;
-      border-radius: 10px;
-      margin-top: 10px;
-    }
-    .cta-section {
-      background: url('') no-repeat center center;
-      background-size: cover;
-      padding: 80px 20px;
-      color: #fff;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #000;
-      color: #fff;
-      padding: 10px 20px;
-      margin-top: 20px;
-      border: none;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .about {
-      background-color: #fff;
-      color: #000;
-      text-align: left;
-    }
-    .about img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 20px;
-    }
-    .faq {
-      background-color: #a3c4a2;
-      color: #000;
-    }
-    footer {
-      background-color: #1c1c1c;
-      font-size: 14px;
-    }
-  </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9VS00L4KSS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9VS00L4KSS');
-</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="green-section hero">
-    <h1>Timeless Timber</h1>
-    <img src="assets/pexels-aeppli-1125265.jpg" alt="Produk utama">
-    <p>Selamat datang di Timeless Timber, tempat terbaik untuk perabot kayu berkualitas tinggi, tahan lama, dan estetik untuk segala jenis ruang.</p>
-    <a class="btn" href="#">Jelajahi</a>
-  </header>
 
-  <section class="features">
-    <div class="feature">
-      <h2>Berkualitas</h2>
-      <p>Kami membuat produk dengan bahan kayu solid pilihan, tahan lama dan berkualitas tinggi.</p>
-      <img src="assets/kursi hijau.jpg" alt="Produk 1">
+  <!-- Section 1 -->
+  <section class="section1">
+    <button>More information</button>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section2">
+    <div class="section2-left">
+      <div class="card"><img src="image1.png" alt="Image 1" /></div>
+      <div class="card"><img src="image2.png" alt="Image 2" /></div>
+      <div class="card"><img src="image3.png" alt="Image 3" /></div>
     </div>
-    <div class="feature">
-      <h2>Design Timeless</h2>
-      <p>Desain minimalis yang elegan dan tidak lekang oleh waktu.</p>
-      <img src="assets/kursi2.jpg" alt="Produk 2">
-    </div>
-    <div class="feature">
-      <h2>Harga Terjangkau</h2>
-      <p>Harga yang bersaing, membuat produk kami bisa diakses banyak kalangan.</p>
-      <img src="assets/meja1.jpg" alt="Produk 3">
+    <div class="section2-right">
+      <p>hIGH QUALITY WOOD AND CRAFTSMAN</p>
+      <p>Description for Image 2</p>
+      <p>Description for Image 3</p>
     </div>
   </section>
 
-  <section class="cta-section">
-    <h2>Bergabung Dengan Kami</h2>
-    <p>Jadilah bagian dari pelanggan yang puas akan furnitur estetis dan berkualitas.</p>
-    <a class="btn" href="#">Daftar Sekarang</a>
+  <!-- Section 3 -->
+  <section class="section3">
+    <h2>About Our Brand</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet.</p>
+    <p>Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis.</p>
   </section>
 
-  <section class="green-section about">
-    <div>
-      <img src="https://images.unsplash.com/photo-1598300056481-2d33d213c9c5" alt="Tentang kami">
-      <h2>Tentang Kami</h2>
-      <p>Timeless Timber adalah produsen furnitur kayu minimalis berkualitas tinggi. Kami berkomitmen untuk menciptakan produk dengan desain estetis, ketahanan luar biasa, dan ramah lingkungan.</p>
-    </div>
+  <!-- Section 4 -->
+  <section class="section4">
+    <div class="product-card"><img src="product1.jpg" alt="Product 1"><h4>Product 1</h4><p>$29.99</p></div>
+    <div class="product-card"><img src="product2.jpg" alt="Product 2"><h4>Product 2</h4><p>$34.99</p></div>
+    <div class="product-card"><img src="product3.jpg" alt="Product 3"><h4>Product 3</h4><p>$39.99</p></div>
+    <div class="product-card"><img src="product4.jpg" alt="Product 4"><h4>Product 4</h4><p>$24.99</p></div>
+    <div class="product-card"><img src="product5.jpg" alt="Product 5"><h4>Product 5</h4><p>$49.99</p></div>
+    <div class="product-card"><img src="product6.jpg" alt="Product 6"><h4>Product 6</h4><p>$19.99</p></div>
+    <div class="product-card"><img src="product7.jpg" alt="Product 7"><h4>Product 7</h4><p>$59.99</p></div>
+    <div class="product-card"><img src="product8.jpg" alt="Product 8"><h4>Product 8</h4><p>$44.99</p></div>
+    <div class="product-card"><img src="product9.jpg" alt="Product 9"><h4>Product 9</h4><p>$99.99</p></div>
   </section>
 
-  <section class="faq">
-    <h2>FAQ</h2>
-    <p><strong>Q:</strong> Bagaimana cara pemesanan?<br/><strong>A:</strong> Klik tombol "Daftar Sekarang" dan ikuti instruksi selanjutnya.</p>
+  <!-- Section 5 -->
+  <section class="section5">
+    <div class="faq">FAQ 1 - [edit this text]</div>
+    <div class="faq">FAQ 2 - [edit this text]</div>
+    <div class="faq">FAQ 3 - [edit this text]</div>
+    <div class="faq">FAQ 4 - [edit this text]</div>
+    <div class="faq">FAQ 5 - [edit this text]</div>
+    <div class="faq">FAQ 6 - [edit this text]</div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; Timeless Timber 2025</p>
+    &copy; 2025 Your Brand | 
+    <a href="https://instagram.com/yourbrand" target="_blank">Instagram</a> |
+    <a href="https://wa.me/yourwhatsapp" target="_blank">WhatsApp</a>
   </footer>
+
 </body>
 </html>
